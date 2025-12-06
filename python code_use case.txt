@@ -40,3 +40,4 @@ elif(Purchase_amt>500):
 
      else:
         print("Sorry we can try next time")
+        print("hello team")
