@@ -1,0 +1,42 @@
+popupclik=input("user click :yes/No")
+if popupclik == "yes":
+    print("available options:1.upcoming classes ,2.Ask anything")
+    dropdown=input("choose your option")
+    if dropdown == "upcoming classes":
+        clasess=input("option courses 1.de,2.ds,3.cloud,4.devops:")
+        if clasess=="de":
+                print("you have selected de")
+        if clasess=="ds":
+                print("you have selected ds")
+        if clasess=="cloud":
+                print("you have selected cloud")
+        if clasess=="devops":
+                print("you have selected devops")
+        if clasess not in ("de","ds","cloud","devops"):
+                print("the course is not available")
+    if dropdown == "ask anything":
+        Question=input("enter your question")
+        print("we will let you know")
+else:
+    print("No action taken")
+	
+discount_max_amount =100
+print("Welcome to Swiggy discount program.")
+Purchase_amt =int (input("Enter the Swiggy purchase amount"))
+if((Purchase_amt==0) or (Purchase_amt<=0) or (Purchase_amt<500)):
+    print("Sorry you don't have enough money for avail this discount")
+elif(Purchase_amt>500):
+     print("Good news you are eligible for 10 % discount but maximum cap limit is Rs100")
+     x=(input("do you want to discount ?"))
+     if(x=="yes"):
+         customer_purchase_amt1 = Purchase_amt * (10 / 100);
+         if (customer_purchase_amt1 >= 100):
+             customer_final_discount_amt = Purchase_amt - 100
+             print(f"your final discount amount is {customer_final_discount_amt}")
+         else:
+          print(customer_purchase_amt1)
+          customer_final_discount_amt=Purchase_amt-customer_purchase_amt1;
+          print(f"your final discount amount is {customer_final_discount_amt}")
+
+     else:
+        print("Sorry we can try next time")
